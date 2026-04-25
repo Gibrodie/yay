@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amanda Search</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      background: #050510;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    form {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      gap: 10px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: none;
+      background: #3b3bf5;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    button:hover {
+      background: #5555ff;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <h1>Amanda Search</h1>
+  <form action="https://duckduckgo.com/" method="GET" target="_blank">
+    <input type="text" name="q" placeholder="Search the web..." autofocus />
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>
